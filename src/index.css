@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    @apply min-h-screen flex flex-col;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('andy-simmons.jpg'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('andy-simmons-2.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--color-text-primary);
+    font-family: 'Work Sans', sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1, h2, h3 {
+    @apply font-extralight;
+  }
+}
+
+@theme {
+  --color-background: oklch(30% 0 0); /* #1E1E1E (Rich Charcoal) */
+  --color-primary: oklch(75% 0.2 90); /* #BFA980 (Warm Gold) */
+  --color-text-primary: oklch(95% 0 0); /* #F5F5F5 (Off-White) */
+  --color-text-secondary: oklch(85% 0 0); /* #CFCFCF (Light Gray) */
+}
