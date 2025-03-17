@@ -1,4 +1,4 @@
-import AudioPlayer from '../components/AudioPlayer';
+import Portfolio from '../components/Portfolio';
 
 function Home() {
   return (
@@ -7,9 +7,9 @@ function Home() {
         <span className='block text-3xl sm:text-6xl tracking-[0.5rem]'>
           Andy Simmons
         </span>
-        <span className='block text-xl sm:text-3xl'>Musician & Songwriter</span>
+        <span className='block'>Musician & Songwriter</span>
       </h1>
-      <AudioPlayer />
+      <Portfolio />
     </>
   );
 }
