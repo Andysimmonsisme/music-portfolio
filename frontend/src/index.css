@@ -6,7 +6,7 @@
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('andy-simmons.jpg'); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('andy-simmons-2.jpg');
+      url('/andy-simmons-2.jpg');
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
