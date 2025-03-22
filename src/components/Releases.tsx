@@ -1,9 +1,44 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+
+interface Artist {
+  external_urls: {
+    spotify: string;
+  };
+  href: string;
+  id: string;
+  name: string;
+  type: string;
+  uri: string;
+}
+
+interface Image {
+  height: number;
+  url: string;
+  width: number;
+}
+
+interface Album {
+  album_type: string;
+  artists: Artist[];
+  available_markets: string[];
+  external_urls: {
+    spotify: string;
+  };
+  href: string;
+  id: string;
+  images: Image[];
+  name: string;
+  release_date: string;
+  release_date_precision: string;
+  total_tracks: number;
+  type: string;
+  uri: string;
+}
 
 function Releases() {
   const [releases, setReleases] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4; // Number of albums to show per page
 
@@ -25,8 +60,12 @@ function Releases() {
         if (!response.ok) throw new Error('Failed to fetch releases.');
         const data = await response.json();
         setReleases(data.items);
-      } catch (err) {
-        setError(err.message);
+      } catch (err: unknown) {
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          setError('An unknown error occurred');
+        }
       } finally {
         setIsLoading(false);
       }
@@ -41,9 +80,11 @@ function Releases() {
   return (
     <>
       <ul
-        className={`grid ${currentPage === totalPages ? 'grid-cols-1' : 'grid-cols-2'} gap-4 py-2`}
+        className={`grid ${
+          currentPage === totalPages ? 'grid-cols-1' : 'grid-cols-2'
+        } gap-4 py-2`}
       >
-        {currentAlbums.map((release) => (
+        {currentAlbums.map((release: Album) => (
           <li key={release.id} className='flex items-center flex-col'>
             <img
               src={release.images[1].url}

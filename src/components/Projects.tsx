@@ -4,7 +4,6 @@ function Projects() {
       <ul className="space-y-2">
         <li>
           <button
-            href="#project1"
             className="w-full px-4 py-2 text-lg border bg-primary rounded-md"
           >
             STEV
@@ -12,7 +11,6 @@ function Projects() {
         </li>
         <li>
           <button
-            href="#project1"
             className="w-full px-4 py-2 text-lg border hover:bg-hover rounded-md"
           >
             Touch the Sky
@@ -20,7 +18,6 @@ function Projects() {
         </li>
         <li>
           <button
-            href="#project1"
             className="w-full px-4 py-2 text-lg border hover:bg-hover rounded-md"
           >
             Andy Simmons
