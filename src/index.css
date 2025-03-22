@@ -38,7 +38,8 @@
 
 @theme {
   --color-background: oklch(30% 0 0); /* #1E1E1E (Rich Charcoal) */
-  --color-primary: oklch(75% 0.2 90); /* #BFA980 (Warm Gold) */
+  --color-primary: oklch(55% 0.15 240); /* Darker Cool Blue */
+  --color-hover: oklch(40% 0 0); /* Lighter, neutral charcoal for hover */
   --color-text-primary: oklch(95% 0 0); /* #F5F5F5 (Off-White) */
   --color-text-secondary: oklch(85% 0 0); /* #CFCFCF (Light Gray) */
 }
