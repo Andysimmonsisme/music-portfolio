@@ -1,10 +1,10 @@
-Music Portfolio
+# Music Portfolio
 
-Overview
+## Overview
 
 This is a React-based web app designed to showcase my original music, organized by project and release. It features an elegant UI with a dark, modern theme, and a structured layout to make browsing easy. The app is fully responsive and optimized for both desktop and mobile viewing.
 
-Features
+## Features
 
 Dynamic Music Organization: Songs are categorized by project and release for easy navigation.
 
@@ -16,7 +16,7 @@ React Framework: Built using modern React best practices, including component-ba
 
 Fast Performance: Optimized for speed and efficiency using Vite.
 
-Tech Stack
+## Tech Stack
 
 Frontend: React (with Hooks & Context API), Tailwind CSS
 
@@ -26,27 +26,24 @@ Build Tool: Vite
 
 Installation & Setup
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/yourusername/andy-simmons-music-portfolio.git
 
-# Navigate to the project directory
+## Navigate to the project directory
 cd music-portfolio
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Start the development server
+## Start the development server
 npm run dev
 
-Usage
+## Usage
 
 Click on a project to browse releases.
 
 Responsive design ensures a seamless experience on all devices.
 
-Future Enhancements
-
-
-Live Demo
+## Live Demo
 
 https://andy-simmons-music-portfolio.netlify.app/
