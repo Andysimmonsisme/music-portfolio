@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# Music Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a React-based web app designed to showcase my original music, organized by project and release. It features an elegant UI with a dark, modern theme, and a structured layout to make browsing easy. The app is fully responsive and optimized for both desktop and mobile viewing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+Dynamic Music Organization: Songs are categorized by project and release for easy navigation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Modern UI Design: Dark theme with blue accents for a professional look.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Mobile-Friendly: Fully responsive design.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+React Framework: Built using modern React best practices, including component-based architecture.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Fast Performance: Optimized for speed and efficiency using Vite.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Tech Stack
+
+Frontend: React (with Hooks & Context API), Tailwind CSS
+
+State Management: React Context API
+
+Build Tool: Vite
+
+Installation & Setup
+
+## Clone the repository
+git clone https://github.com/yourusername/andy-simmons-music-portfolio.git
+
+## Navigate to the project directory
+cd music-portfolio
+
+## Install dependencies
+npm install
+
+## Start the development server
+npm run dev
+
+## Usage
+
+Click on a project to browse releases.
+
+Responsive design ensures a seamless experience on all devices.
+
+## Live Demo
+
+https://andy-simmons-music-portfolio.netlify.app/
