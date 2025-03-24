@@ -96,13 +96,15 @@ function Releases({ projectId }: { projectId: string | null }) {
       >
         {currentAlbums.map((release: Album) => (
           <li key={release.id} className='flex items-center flex-col'>
-            <img
-              src={release.images[1].url}
-              alt={release.name}
-              width={300}
-              height={300}
-            />
-            {release.name}
+            <a href={release.uri}>
+              <img
+                src={release.images[1].url}
+                alt={release.name}
+                width={300}
+                height={300}
+              />
+              {release.name}
+            </a>
           </li>
         ))}
       </ul>

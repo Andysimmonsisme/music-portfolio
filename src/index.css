@@ -15,6 +15,14 @@
     font-optical-sizing: auto;
   }
 
+  a {
+    @apply underline;
+  }
+
+  a:hover {
+    @apply text-text-hover;
+  }
+
   button {
     @apply cursor-pointer;
   }
@@ -41,5 +49,5 @@
   --color-primary: oklch(55% 0.15 240); /* Darker Cool Blue */
   --color-hover: oklch(40% 0 0); /* Lighter, neutral charcoal for hover */
   --color-text-primary: oklch(95% 0 0); /* #F5F5F5 (Off-White) */
-  --color-text-secondary: oklch(85% 0 0); /* #CFCFCF (Light Gray) */
+  --color-text-hover: oklch(75% 0.15 240); /* Darker Cool Blue */
 }
