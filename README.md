@@ -42,6 +42,8 @@ Start the development server
 
 Click on a project to browse releases.
 
+Click on a release to open it in Spotify.
+
 Responsive design ensures a seamless experience on all devices.
 
 ## Live Demo
