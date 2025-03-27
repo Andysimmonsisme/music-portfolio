@@ -27,7 +27,7 @@ Build Tool: Vite
 ## Installation & Setup
 
 Clone the repository
-`git clone https://github.com/Andysimmonsisme/andy-simmons-music-portfolio.git`
+`git clone https://github.com/Andysimmonsisme/music-portfolio.git`
 
 Navigate to the project directory
 `cd music-portfolio`
