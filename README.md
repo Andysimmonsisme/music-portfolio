@@ -24,19 +24,19 @@ State Management: React Context API
 
 Build Tool: Vite
 
-Installation & Setup
+## Installation & Setup
 
-## Clone the repository
-git clone https://github.com/yourusername/andy-simmons-music-portfolio.git
+Clone the repository
+`git clone https://github.com/yourusername/andy-simmons-music-portfolio.git`
 
-## Navigate to the project directory
-cd music-portfolio
+Navigate to the project directory
+`cd music-portfolio`
 
-## Install dependencies
-npm install
+Install dependencies
+`npm install`
 
-## Start the development server
-npm run dev
+Start the development server
+`npm run dev`
 
 ## Usage
 
